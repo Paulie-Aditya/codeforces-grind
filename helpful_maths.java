@@ -4,7 +4,6 @@ public class helpful_maths {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-
         ArrayList<Integer> arr = new ArrayList<>();
 
         for (int i = 0; i < s.length(); i++) {
