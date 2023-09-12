@@ -8,7 +8,6 @@ public class capitalize {
         if (s.charAt(0) - 'A' >= 0 && s.charAt(0) - 'A' < 26) {
             System.out.println(s);
         } else {
-            // s.charAt(0) = s.charAt(0) - ('A' - 'a');
             String y = s.substring(1, s.length());
             s = s.toUpperCase();
             char x = s.charAt(0);
