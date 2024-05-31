@@ -11,5 +11,7 @@ public class elephant {
             count++;
         }
         System.out.println(count);
+        sc.close();
     }
+
 }

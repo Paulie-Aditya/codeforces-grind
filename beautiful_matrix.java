@@ -13,5 +13,6 @@ public class beautiful_matrix {
             }
         }
         System.out.println(ans);
+        sc.close();
     }
 }

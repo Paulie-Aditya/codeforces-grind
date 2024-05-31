@@ -5,26 +5,25 @@ public class petya {
         Scanner sc = new Scanner(System.in);
         String s1 = sc.nextLine();
         String s2 = sc.nextLine();
-
+        sc.close();
         int n = s1.length();
         s1 = s1.toLowerCase();
-        s2 = s2.toLowerCase();   
+        s2 = s2.toLowerCase();
 
-        for(int i = 0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             char c1 = s1.charAt(i);
             char c2 = s2.charAt(i);
-            if(!(c1 == c2)){
-                if(c1-'a' > c2- 'a'){
+            if (!(c1 == c2)) {
+                if (c1 - 'a' > c2 - 'a') {
                     System.out.println(1);
-                }
-                else{
+                } else {
                     System.out.println(-1);
                 }
 
                 return;
             }
-  
+
         }
-        System.out.println(0);  
-}
+        System.out.println(0);
+    }
 }

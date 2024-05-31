@@ -10,21 +10,20 @@ public class soldier_banana {
         int b = 0;
         int i = 1;
 
-        while(w>0){
-        
-            if(!(n - k*i > 0)){
-                b+= -1*(n- k*i);
+        while (w > 0) {
+
+            if (!(n - k * i > 0)) {
+                b += -1 * (n - k * i);
                 n = 0;
-            }
-            else{
-                n-= i*k;
+            } else {
+                n -= i * k;
             }
             i++;
             w--;
         }
 
         System.out.println(b);
+        sc.close();
 
-        
     }
 }

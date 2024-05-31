@@ -8,9 +8,7 @@ public class bitplusplus {
 
         int x = 0;
 
-
-        for(int i = 0;i<n;i++)
-        {
+        for (int i = 0; i < n; i++) {
             String s = sc.nextLine();
             if (s.charAt(0) == '-' || s.charAt(1) == '-' || s.charAt(2) == '-') {
                 x--;
@@ -19,5 +17,6 @@ public class bitplusplus {
             }
         }
         System.out.println(x);
+        sc.close();
     }
 }

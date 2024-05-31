@@ -22,5 +22,7 @@ public class word {
             s = s.toUpperCase();
             System.out.println(s);
         }
+
+        sc.close();
     }
 }

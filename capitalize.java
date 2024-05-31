@@ -14,5 +14,6 @@ public class capitalize {
             System.out.print(x + y);
 
         }
+        sc.close();
     }
 }

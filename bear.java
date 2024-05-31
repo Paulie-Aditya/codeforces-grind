@@ -5,6 +5,7 @@ public class bear {
         Scanner sc = new Scanner(System.in);
         int limak = sc.nextInt();
         int bob = sc.nextInt();
+        sc.close();
         int count = 0;
 
         while (limak <= bob) {

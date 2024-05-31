@@ -5,7 +5,7 @@ public class translate {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         String t = sc.nextLine();
-
+        sc.close();
         int n = s.length();
         if (t.length() != n) {
             System.out.println("NO");

@@ -7,15 +7,16 @@ public class wrong_subtraction {
         int n = sc.nextInt();
         int k = sc.nextInt();
 
-        while(k>0){
-            if(n%10 == 0){
-                n = n/10;
-            }
-            else{
+        while (k > 0) {
+            if (n % 10 == 0) {
+                n = n / 10;
+            } else {
                 n--;
             }
             k--;
         }
         System.out.println(n);
+
+        sc.close();
     }
 }

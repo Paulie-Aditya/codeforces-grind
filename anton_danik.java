@@ -6,6 +6,7 @@ public class anton_danik {
         int n = sc.nextInt();
         sc.nextLine();
         String s = sc.nextLine();
+        sc.close();
         int a = 0;
         int d = 0;
         for (int i = 0; i < n; i++) {

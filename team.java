@@ -19,5 +19,6 @@ public class team {
         }
 
         System.out.println(count);
+        sc.close();
     }
 }

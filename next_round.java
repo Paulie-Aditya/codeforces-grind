@@ -21,5 +21,6 @@ public class next_round {
         }
 
         System.out.println(count);
+        sc.close();
     }
 }
