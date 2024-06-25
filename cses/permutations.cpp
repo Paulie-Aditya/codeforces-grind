@@ -14,32 +14,32 @@ typedef pair<int,int> pi;
 int solve(){
     return 0;
 }
-vector<vi> res;
-void search(vi &permutation, bool* chosen, int n) {
+vector<vll> res;
+void search(vll &permutation, bool* chosen, int n) {
         if(res.size() != 0)
             return;
         if((int)(permutation.size()) == n){
-            for(int j = 1; j<permutation.size(); j++){
-                    if(abs(permutation[j]-permutation[j-1]) == 1)
-                        return;
-            }
             res.PB(permutation);
         }
         else{
-            if(permutation.size() > 1){
-                for(int j = 1; j<permutation.size(); j++){
-                    if(abs(permutation[j]-permutation[j-1]) == 1)
-                        return;
-                }
+            int curr = 0;
+            int size = permutation.size();
+            if(size > 0){
+                curr = permutation[size-1];
             }
             REP(i, 1, n+1){
                 if(chosen[i])
                     continue;
-                chosen[i] = true;
-                permutation.PB(i);
-                search(permutation, chosen, n);
-                chosen[i] = false;
-                permutation.pop_back();
+                if((curr == 0) || (abs(i-curr) > 1)){
+                    chosen[i] = true;
+                    permutation.PB(i);
+                    search(permutation, chosen, n);
+                    chosen[i] = false;
+                    permutation.pop_back();
+                }
+                else    
+                    continue;
+                
             }
         }
     }
@@ -49,7 +49,7 @@ int main(){
     cin.tie(0);
     int n;
     cin >> n;
-    vi permutation;
+    vll permutation;
     bool *chosen = new bool[n+1];
     REP(i, 0, n+1){
         chosen[i] = 0;

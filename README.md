@@ -9,9 +9,9 @@ Progress Report:
  Codeforces Round 953 (Div. 2) : Newbie 918
  Codeforces Round 954 (Div. 3) : Newbie 1032
 
-Profiles:
-Codeforces:
-CodeChef:
-AtCoder:
-LeetCode:
-G4G:
+## Profiles:
+Codeforces: https://codeforces.com/profile/Paulieaditya
+CodeChef: https://www.codechef.com/users/paulie_aditya
+AtCoder: https://atcoder.jp/users/paulieAditya
+LeetCode: https://leetcode.com/u/paulie_aditya/
+G4G: https://www.geeksforgeeks.org/user/paulie_aditya/
